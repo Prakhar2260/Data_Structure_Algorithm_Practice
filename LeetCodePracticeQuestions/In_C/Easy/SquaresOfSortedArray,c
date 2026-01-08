@@ -1,0 +1,29 @@
+
+int* sortedSquares(int* nums, int numsSize, int* returnSize)
+ {
+    int* result = (int*)malloc(numsSize * sizeof(int));
+    int l = 0, r = numsSize - 1;
+    int pos= numsSize-1;
+
+    while (l <=r)
+     {
+        int left=nums[l]*nums[l];
+        int right=nums[r]*nums[r];
+
+        if (left>right)
+         {
+            result[pos--]=left;
+            l++;
+
+        } 
+        
+        else
+         {
+            result[pos--]=right;
+            r--;
+        }
+    }
+
+    *returnSize = numsSize;
+    return result;
+}
