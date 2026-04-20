@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>  
+
+int main()
+{
+    int F1,P1,F2,P2;
+    
+    scanf("%d %d %d %d",&F1,&P1,&F2,&P2);
+    
+    int diff1=abs(F1-P1);
+    int diff2=abs(F2-P2);
+    
+    if(diff1<diff2)
+    {
+        printf("First\n");
+    }
+    
+    else if(diff2<diff1)
+    {
+        printf("Second\n");
+    }
+    
+    else
+    {
+        printf("Both\n");
+    }
+    
+    return 0;
+}
