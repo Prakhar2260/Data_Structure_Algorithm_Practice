@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int L, R;
+    cin >> L >> R;
+
+    if (L % 2 == 0 || L < R)
+        cout << "Yes";
+    else
+        cout << "No";
+
+    return 0;
+}
