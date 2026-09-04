@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int S;
+    cin >> S;
+
+    cout << 10-S << endl;
+
+    return 0;
+}
